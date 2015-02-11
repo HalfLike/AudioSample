@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">分贝测量</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_feedback">我要吐槽</string>
+    <string name="action_message">消息</string>
+    <string name="unit">DB</string>
+    <string name="db_start_sample">START</string>
+    <string name="db_stop_sample">STOP</string>
+    <string name="message_system">系统消息</string>
+
+</resources>

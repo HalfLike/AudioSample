@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_shape">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="#3a3a3a"
+        android:textSize="22sp"
+        android:text="@string/action_feedback"
+        android:id="@+id/title"/>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:src="@color/dividing_line"
+        android:paddingLeft="2dp" android:paddingRight="2dp"/>
+    <EditText android:layout_width="match_parent" android:layout_height="@dimen/dialog_message_height"
+        android:id="@+id/feedback_content"
+        android:layout_marginTop="10dp" android:layout_marginBottom="4dp"
+        android:layout_marginLeft="9dp" android:layout_marginRight="9dp"
+        android:textSize="18sp"
+        android:scrollbars="vertical"
+        android:background="@drawable/text_shape" android:singleLine="false" android:gravity="top"
+        android:hint="有什么问题和意见，赶紧吐槽反馈吧=^_^="/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView android:layout_width="0dp" android:layout_height="match_parent"
+            android:id="@+id/divide" android:layout_centerHorizontal="true"/>
+        <Button style="@style/BtnNormal"
+            android:id="@+id/feedback_yes"
+            android:text="提交"
+            android:layout_alignRight="@+id/divide" android:layout_marginRight="12dp"/>
+        <Button style="@style/BtnNormal"
+            android:id="@+id/feedback_no"
+            android:text="取消"
+            android:layout_alignLeft="@+id/divide" android:layout_marginLeft="12dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

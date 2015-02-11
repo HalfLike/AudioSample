@@ -1,0 +1,70 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:text="实时响度(dB):"
+        android:id="@+id/real"
+        android:layout_above="@+id/realTimeDb"/>
+    <TextView
+        android:text="0"
+        android:textSize="90sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/realTimeDb"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:textSize="22sp"
+        android:text="平均响度(dB):"
+        android:id="@+id/average"
+        android:layout_alignBottom="@+id/averageDb" android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/db_result"
+        android:text="0"
+        android:id="@+id/averageDb"
+        android:layout_above="@+id/real"
+        android:layout_toRightOf="@+id/average" android:layout_marginLeft="10dp"
+        android:layout_marginBottom="90dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:textSize="22sp"
+        android:id="@+id/max"
+        android:text="最大响度(dB):"
+        android:layout_alignBottom="@+id/maxDb" android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/db_result"
+        android:text="0"
+        android:id="@+id/maxDb"
+        android:layout_above="@+id/real" android:layout_toRightOf="@+id/max"
+        android:layout_marginLeft="10dp" android:layout_marginBottom="50dp"/>
+    <ToggleButton
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sampleBtn"
+        android:textOn="@string/db_start_sample" android:textSize="22sp"
+        android:checked="true"
+        android:background="@drawable/toogle_selector"
+        android:layout_below="@+id/realTimeDb" android:layout_marginTop="50dp" android:layout_centerHorizontal="true"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout"
+        android:layout_alignParentBottom="true">
+    </RelativeLayout>
+
+</RelativeLayout>
